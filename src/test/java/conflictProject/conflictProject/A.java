@@ -13,7 +13,7 @@ public class A {
 	
 	WebDriver driver;
 	
-	@Test
+	
 	public void mouseActions() {
 		Actions act = new Actions(driver);
 		act.moveToElement(driver.findElement(By.xpath("//button[.='Automation Tools']"))).perform();
@@ -30,6 +30,7 @@ public class A {
 			}
 
 		}
+		
 	}
 
 }
