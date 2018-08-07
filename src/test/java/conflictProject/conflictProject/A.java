@@ -15,6 +15,7 @@ public class A {
 	
 	
 	public void mouseActions() {
+		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
 		Actions act = new Actions(driver);
 		act.moveToElement(driver.findElement(By.xpath("//button[.='Automation Tools']"))).perform();
 		List<WebElement> all = driver.findElements(By.xpath("//button[.='Automation Tools']/..//a"));
