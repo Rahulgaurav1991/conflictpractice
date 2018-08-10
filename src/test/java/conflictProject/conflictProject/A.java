@@ -35,7 +35,7 @@ public class A {
 			}
 
 		}
-		driver.quit();
+		driver.close();
 	}
 
 }
