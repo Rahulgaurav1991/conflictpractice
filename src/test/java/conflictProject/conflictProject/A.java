@@ -13,13 +13,13 @@ public class A {
 	
 	WebDriver driver;
 	
-	
+	@Test
 	public void mouseActions() {
-<<<<<<< HEAD
+
 		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-=======
+
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
->>>>>>> added implicit wait
+
 		Actions act = new Actions(driver);
 		act.moveToElement(driver.findElement(By.xpath("//button[.='Automation Tools']"))).perform();
 		List<WebElement> all = driver.findElements(By.xpath("//button[.='Automation Tools']/..//a"));
@@ -35,7 +35,7 @@ public class A {
 			}
 
 		}
-		
+		driver.quit();
 	}
 
 }
